@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Henry & Marga’s 25th Anniversary - Winner</title>
+  <style>
+    body {
+      display: flex; justify-content: center; align-items: center;
+      min-height: 100vh; margin: 0; background-color: #f6f6f6;
+      font-family: Arial, sans-serif;
+    }
+    .card {
+      position: relative; width: 500px; height: 500px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-radius: 8px;
+      overflow: hidden;
+      background: url('Annivlogo.jpg') no-repeat center center;
+      background-size: cover;
+    }
+    .card::before {
+      content: ""; position: absolute; inset: 0;
+      background-color: rgba(255, 255, 255, 0.4);
+    }
+    .content {
+      position: absolute; inset: 0;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; padding: 1rem;
+    }
+    h1 { margin: 0; font-size: 2rem; color: #222; }
+    h2 { margin: 0.5rem 0; font-size: 1.3rem; color: #444; }
+    .msg {
+      margin-top: 1rem; font-size: 1.1rem; color: #222;
+    }
+    /* Celebration emphasis */
+    .congrats {
+      font-size: 2.5rem;
+      color: #B8860B; /* golden accent */
+      font-weight: bold;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+      text-emphasis: filled double-circle #B8860B;
+      text-emphasis-position: under;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="content">
+      <h1>Henry &amp; Marga Aquende</h1>
+      <h2>25<sup>th</sup> Wedding Anniversary</h2>
+      <p class="congrats">Congratulations!</p>
+      <p class="msg"><strong>You won!</strong><br>Please claim your prize in front.</p>
+    </div>
+  </div>
+</body>
+</html>
